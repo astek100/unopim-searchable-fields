@@ -1,0 +1,59 @@
+{
+    "name": "astek100/unopim-searchable-fields",
+    "description": "Choose which product attributes the UnoPIM product grid search box searches - GTIN, supplier reference, external ids - instead of only SKU and name.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "unopim",
+        "pim",
+        "laravel",
+        "search",
+        "datagrid",
+        "product-grid",
+        "elasticsearch"
+    ],
+    "homepage": "https://github.com/astek100/unopim-searchable-fields",
+    "support": {
+        "issues": "https://github.com/astek100/unopim-searchable-fields/issues",
+        "source": "https://github.com/astek100/unopim-searchable-fields"
+    },
+    "authors": [
+        {
+            "name": "Ferhat Tuerkoglu",
+            "email": "ferhat@astek.de",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0 || ^12.0 || ^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.29",
+        "phpunit/phpunit": "^11.0 || ^12.0 || ^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Astek\\SearchableFields\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Astek\\SearchableFields\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Astek\\SearchableFields\\Providers\\SearchableFieldsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "pint --test",
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
