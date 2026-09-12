@@ -192,6 +192,13 @@ If that lands, this package remains useful for what it adds on top: the admin
 screen, so the list is changed by ticking boxes rather than by editing a file on
 the server.
 
+## Authorship
+
+Written by Claude Opus 5 (Anthropic) against a production UnoPIM 3.1.0
+installation, and reviewed there before publication. Commits carry a
+`Co-Authored-By` trailer. Treat it as you would any unfamiliar package: read the
+source before installing it on a catalogue you care about.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
